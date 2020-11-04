@@ -33,7 +33,7 @@ def ab_dir_check():
 		os.mkdir('./apache_blue/backup_files')
 		os.mkdir('./apache_blue/log_files')
 
-# find all configuration files
+# find all config files
 def conf_files(path):
 	config_files = list()
 	for pd, directories, files in os.walk(path):
@@ -43,7 +43,7 @@ def conf_files(path):
 				config_files.append(fname)
 	return config_files
 
-# make backups of configuration files
+# make backups of config files
 def backup_files(conf_list):
 	global dtnow
 	with tempfile.TemporaryDirectory() as directory:
