@@ -18,7 +18,7 @@ def banner_print():
 	
 	print("\n\n\n\nThank you for using " + Fore.CYAN + "apache_blue! " + Style.RESET_ALL + "Your Apache config files are now being scanned to find settings that can be\nchanged to make your server more secure. We will let you know what the best practice settings are below:\n\n")
 
-# check current directroy for apache_blue directroy. creates it if not present
+# check current directory for apache_blue directory. creates it if not present
 def ab_dir_check():
 	if os.path.isdir('./apache_blue') is True:
 		if os.path.isdir('./apache_blue/backup_files') is True:
